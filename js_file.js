@@ -1,21 +1,13 @@
 class Node {
-value = null;
-nextNode = null;
-
-    constructor(value) {
-        this.value = value
-    }
-    
-    value() {
-        return this.value;
+    constructor(value = null, nextNode = null) {
+        this.value = value;
+        this.nextNode = nextNode;
     }
 }
 
 class LinkedList {
-
-
-    append(value) {
-
+    constructor(value = null) {
+        this.head = new Node(value);
     }
 }
 

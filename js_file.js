@@ -8,6 +8,7 @@ class Node {
 class LinkedList {
     constructor(value = null) {
         this.head = new Node(value);
+        this.size = 0;
     }
 
     append (value) {
@@ -16,6 +17,7 @@ class LinkedList {
             currentNode = currentNode.nextNode;
         }
         currentNode.nextNode = new Node(value);
+        size++;
     }
 }
 

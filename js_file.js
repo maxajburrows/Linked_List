@@ -27,5 +27,9 @@ class LinkedList {
         currentNode.nextNode = this.tail;
         size++;
     }
+
+    prepend (value) {
+        this.head = new Node(value, this.head)
+    }
 }
 
